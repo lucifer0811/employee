@@ -12,18 +12,38 @@
   font-weight: bold;
 }
 .header {
+  padding-right: 50px;
+  padding-left: 50px;
   background: #e7e7e7;
   border: 1px solid #DDDDDD;
 }
 .footer {
   background: #e7e7e7;
-  font-size: 1.7em;
   .Name {
     padding: 85px;
     font: none;
+    font-size: 1.7em;
   }
-  #designer {
-    font: none;
-    padding-right: 90px;
+  #action_page {
+    padding-right: 80px;
+    margin: 6px;
   }
+}
+#new_user {
+  .title_new_user {
+    border: 1px solid #e7e7e7;
+    background: #e7e7e7;
+  }
+  width: 450px;
+  height: 480px;
+  background-color: #e7e7e7;
+  border: 1px ridge #e7e7e7;
+  margin-top: 50px;
+  margin-left: 350px;
+  margin-right: 200px;
+  margin-bottom: 50px;
+  padding: 2%;
+}
+.actions {
+  padding-top: 15px;
 }

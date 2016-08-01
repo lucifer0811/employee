@@ -1,6 +1,9 @@
 <div class="footer">
   <span class="Name"><%= t "layouts.footer.name" %></span>
-  <span class="nav navbar-nav navbar-right" id="designer">
-    <%= t "layouts.footer.designer"%>
-  </span>
+  <div class="nav navbar-nav navbar-right" id="action_page">
+      <%= link_to "About", static_pages_about_path %>
+      <%= link_to "Contact", static_pages_contact_path %>
+      <%= link_to "Help", static_pages_help_path %>
+    </ul>
+  </div>
 </div>

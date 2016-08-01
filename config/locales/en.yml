@@ -25,3 +25,7 @@ en:
     footer:
       name: "Phan Nguyen"
       designer: "BY NGUYEN PHAN"
+  views:
+    users:
+      new: "New Users"
+      login: "Welcome to Employee Directory"

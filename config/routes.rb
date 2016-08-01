@@ -1,17 +1,21 @@
 Rails.application.routes.draw do
-  get 'static_pages/home'
+  devise_for :users, controllers: {sessions: "users/sessions"}
+  get "static_pages/home"
 
-  get 'static_pages/help'
+  get "static_pages/help"
 
-  get 'static_pages/contact'
+  get "static_pages/contact"
 
-  get 'static_pages/about'
+  get "static_pages/about"
+  devise_scope :user do
+    get "sign_in", to: "devise/sessions#new"
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  root "static_pages#home"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
