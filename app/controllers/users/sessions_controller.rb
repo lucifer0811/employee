@@ -1,11 +1,11 @@
 class Users::SessionsController < Devise::SessionsController
   def new
     get_pre_login_url
+    flash[:success] = t "views.users.login"
     super
   end
   def create
     @referer_url = root_path
-    flash[:success] = t "views.users.login"
     super
   end
   def destroy

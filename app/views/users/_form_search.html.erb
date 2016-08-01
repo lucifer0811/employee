@@ -1,0 +1,5 @@
+<%= search_form_for @q do |f| %>
+  <%= f.text_field :name_or_email_cont, placeholder: "Search by name or email"%>
+
+  <%= f.submit %>
+<% end %>

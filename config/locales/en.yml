@@ -29,3 +29,4 @@ en:
     users:
       new: "New Users"
       login: "Welcome to Employee Directory"
+      submit: "Search"

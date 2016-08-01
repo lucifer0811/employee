@@ -19,6 +19,8 @@ class DeviseCreateUsers < ActiveRecord::Migration
       t.datetime :last_sign_in_at
       t.string   :current_sign_in_ip
       t.string   :last_sign_in_ip
+      t.boolean :is_admin, default: false
+      t.string   :avatar
 
       ## Confirmable
       # t.string   :confirmation_token

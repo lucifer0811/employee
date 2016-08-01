@@ -35,15 +35,19 @@
     background: #e7e7e7;
   }
   width: 450px;
-  height: 480px;
+  height: auto;
   background-color: #e7e7e7;
   border: 1px ridge #e7e7e7;
-  margin-top: 50px;
+  margin: 2%;
   margin-left: 350px;
-  margin-right: 200px;
-  margin-bottom: 50px;
   padding: 2%;
 }
 .actions {
   padding-top: 15px;
+}
+#list_user {
+  border: 1px solid #e7e7e7;
+  .title_table {
+    background-color: #7FDBFF;
+  }
 }
