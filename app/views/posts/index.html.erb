@@ -1,0 +1,44 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-4">
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary btn-sm"
+          data-toggle="modal" data-target="#mynewpost" data-whatever="@fat">New Post</button>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="row" id="container_posts">
+      <%= render @posts %>
+    </div>
+    <!-- Modal  create action -->
+    <div class="modal fade" id="mynewpost" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Post</h4>
+          </div>
+          <%= form_for(@post, remote: true) do |f| %>
+          <div class="modal-body">
+            <div class="form-group">
+              <div class="field">
+                <%= f.label :title %><br>
+                <%= f.text_field :title, class: "form-control post_title" %>
+              </div>
+              <div class="field">
+                <%= f.label :content %><br>
+                <%= f.text_field :content, class: "form-control post_content" %>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal" id="mynewpostclose">Close</button>
+            <%= submit_tag "Create", class: "btn btn-primary" %>
+          </div>
+        </div>
+      </div>
+      </div>
+    <% end %>
+  <!-- Modal -->
+</div>

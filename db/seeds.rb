@@ -16,3 +16,4 @@ User.create!(name:  "admin",
     password_confirmation: password,
     avatar: avatar)
 end
+

@@ -30,3 +30,13 @@ en:
       new: "New Users"
       login: "Welcome to Employee Directory"
       submit: "Search"
+      name: "Name"
+    posts:
+      all: "All Post"
+      create: "Create"
+      content: "Content"
+      empty: "No Post"
+      edit: "Edit"
+      new: "New post"
+      post: "Post"
+      title: "Title"
