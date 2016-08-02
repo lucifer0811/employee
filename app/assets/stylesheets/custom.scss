@@ -18,15 +18,22 @@
   border: 1px solid #DDDDDD;
 }
 .footer {
-  background: #e7e7e7;
-  .Name {
-    padding: 85px;
-    font: none;
-    font-size: 1.7em;
+  background-color: #e7e7e7;
+  padding-right: 50px;
+  small {
+    background-color: #e7e7e7;
+    float: left;
+    padding-left: 40px;
   }
-  #action_page {
-    padding-right: 80px;
-    margin: 6px;
+  ul {
+    background-color: #e7e7e7;
+    float: right;
+    list-style: none;
+    padding-right: 35px;
+    li {
+      float: left;
+      margin-left: 15px;
+    }
   }
 }
 #new_user {
